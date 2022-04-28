@@ -7,7 +7,14 @@ const AboutUs: React.FC = () => {
 		<Container>
 			
 
-			
+
+
+
+
+
+
+													
+
 			<Card />
 		</Container>
 	);
