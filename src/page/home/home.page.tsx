@@ -18,6 +18,12 @@ const Home: React.FC = () => {
 	}, []);
 
 	return (
+
+
+
+
+
+		
 		<Container>
 
 
