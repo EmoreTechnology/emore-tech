@@ -25,9 +25,11 @@ const Home: React.FC = () => {
 				<Particles id="tsparticles" className="tsparticles" options={particlesOptions as ISourceOptions} init={particlesInit} />
 			</div>
 
-
-
 			<div className="aboutUs">
+
+
+
+
 				<AboutUs />
 			</div>
 		</Container>
