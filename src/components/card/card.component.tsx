@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from './card.styles';
 
-
 const Card: React.FC = () => {
 	return (
 		<Container>
