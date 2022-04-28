@@ -1,4 +1,4 @@
 export interface HeaderProps {
-	title?: string;
-	language?: string;
+  title?: string;
+  language?: string;
 }
