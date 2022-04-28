@@ -5,7 +5,6 @@ import { Container } from './about-us.styles';
 const AboutUs: React.FC = () => {
 	return (
 		<Container>
-
 			
 			<Card />
 		</Container>
