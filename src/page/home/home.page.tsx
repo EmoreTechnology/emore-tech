@@ -27,10 +27,12 @@ const Home: React.FC = () => {
 
 			<div className="aboutUs">
 
-
-
-
 				<AboutUs />
+
+
+
+
+
 			</div>
 		</Container>
 	);
