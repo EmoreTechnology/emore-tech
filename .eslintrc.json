@@ -1,36 +1,35 @@
 {
-	"settings": {
-    "import/resolver": {
-      "node": {
-       "paths": ["src"],
-      "extensions": [".js", ".jsx", ".ts", ".tsx"],
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@nrwl/nx"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ]
       }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nrwl/nx/typescript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nrwl/nx/javascript"],
+      "rules": {}
     }
-  },
-	"env": {
-			"browser": true,
-			"es2021": true
-	},
-	"extends": [
-			"plugin:react/recommended",
-			"airbnb"
-	],
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-			"ecmaFeatures": {
-					"jsx": true
-			},
-			"ecmaVersion": "latest",
-			"sourceType": "module"
-	},
-	"plugins": [
-			"react",
-			"@typescript-eslint"
-	],
-	"rules": {
-		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx", ".ts"] }],
-		"import/prefer-default-export": 0,
-		"indent": ["error", 2, { "MemberExpression": 1 }],
-    "no-tabs": 0
-	}
+  ]
 }
