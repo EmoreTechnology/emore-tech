@@ -5,10 +5,15 @@ export const Container = styled.div`
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	width: 100%;
 	height: 70px;
 	background: #000000;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media(min-width: 768px) {
+		flex-wrap: nowrap;
+	}
 
 	> .wrapper {
 		display: flex;
