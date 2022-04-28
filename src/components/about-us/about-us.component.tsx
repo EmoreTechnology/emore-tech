@@ -6,14 +6,7 @@ const AboutUs: React.FC = () => {
 	return (
 		<Container>
 			
-
-
-
-
-
-
-
-													
+											
 
 			<Card />
 		</Container>
