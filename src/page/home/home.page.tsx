@@ -33,6 +33,9 @@ const Home: React.FC = () => {
         />
       </div>
 
+
+			
+
       <div className="aboutUs">
         <AboutUs />
       </div>
@@ -40,7 +43,7 @@ const Home: React.FC = () => {
 
 
 
-			
+
     </Container>
   );
 };
