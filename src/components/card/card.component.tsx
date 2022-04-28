@@ -1,18 +1,14 @@
 import React from 'react';
 import { Container } from './card.styles';
+import {AboutUsProps}  from '../../utils/models/about-us.mock';
 
-
-const Card: React.FC = () => {
+const Card: React.FC<AboutUsProps> = ({ description, icon, title}) => {
 	return (
 		<Container>
 			<div>
-				<h1>Missão</h1>
-
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-					when an unknow. Lorem Ipsum is simply dummy text of the printing and
-					typesetting industry. Lorem Ipsum has been the industry's standard dummy
-					text ever since the 1500s, when an unknow.</p>
+				<p>{icon}</p>
+				<h1>{title}</h1>
+				<p>{description}</p>
 			</div>
 		</Container>
 	);
