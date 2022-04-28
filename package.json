@@ -53,18 +53,11 @@
     "eslint-plugin-react": "^7.29.4",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.5",
-    "prettier": "^2.6.2",
-    "styled-components": "^5.3.3"
+    "prettier": "^2.6.2"
   },
-	"husky": {
+  "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn format && git add -A ."
     }
-  },
-  "lint-staged": {
-    "*.(js|jsx|ts|tsx|scss|css|html)": [
-      "prettier --write",
-      "git add ."
-    ]
   }
 }
