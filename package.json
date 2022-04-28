@@ -8,12 +8,13 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^15.14.9",
-    "@types/react": "^17.0.44",
-    "@types/react-dom": "^17.0.16",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.0.6",
+    "styled-components": "^5.3.5",
     "tslib": "^2.4.0",
     "tsparticles": "^2.0.6",
     "tsparticles-engine": "^2.0.6",
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.25"
   }
 }
