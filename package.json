@@ -65,9 +65,10 @@
             "pre-commit": "lint-staged"
         }
     },
-    "lint-staged": {
-        "*.{json,js,ts,jsx,tsx,html}": [
-            "prettier --write"
-        ]
-    }
+     "lint-staged": {
+			"*.(js|jsx|ts|tsx|scss|css|html)": [
+				"prettier --write",
+				"git add ."
+    ]
+  }
 }
