@@ -20,7 +20,9 @@ const Home: React.FC = () => {
 	return (
 		<Container>
 
-			
+
+
+
 			<Header />
 
 			<div className="home">
