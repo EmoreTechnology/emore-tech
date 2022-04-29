@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgba(44, 69, 141, 0.3);
@@ -16,6 +16,8 @@ export const Container = styled.div`
     justify-content: space-around;
     width: 100%;
     max-width: 850px;
+    margin-top: 28px;
+
     > div + div {
       margin-top: 14px;
 
@@ -31,5 +33,10 @@ export const Container = styled.div`
         margin: 0;
       }
     }
+  }
+
+  > .contact {
+    display: flex;
+    margin-top: 60px;
   }
 `;

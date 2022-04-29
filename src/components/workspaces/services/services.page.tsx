@@ -1,13 +1,12 @@
 import React from 'react';
 import { tooltipArray } from '../../../utils/mocks/tooltip.mock';
+import ContactForm from '../../form-contact/form-contact.component';
 import Tooltip from '../../tooltip/tooltip.component';
 import { Container } from './services.styles';
 
 const Services: React.FC = () => {
   return (
     <Container>
-      <p>oi</p>
-
       <div className="tooltip">
         {tooltipArray.map((tool) => (
           <Tooltip
@@ -17,6 +16,10 @@ const Services: React.FC = () => {
             email={tool.email}
           />
         ))}
+      </div>
+
+      <div className="contact">
+        <ContactForm />
       </div>
     </Container>
   );
