@@ -15,7 +15,6 @@ export const Container = styled.div`
   > h1 {
     margin: 0;
     font-family: 'Poppins';
-
     text-align: center;
     background: linear-gradient(
         90.88deg,
@@ -31,13 +30,21 @@ export const Container = styled.div`
 
   > .title {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 42px;
     line-height: 68px;
+
+    @media (min-width: 768px) {
+      font-size: 60px;
+    }
   }
 
   > .description {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 48px;
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
   }
 `;
