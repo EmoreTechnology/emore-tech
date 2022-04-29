@@ -7,8 +7,11 @@ import { ISourceOptions } from 'tsparticles-engine';
 // Components
 import AboutUs from '../../components/workspaces/about-us/about-us.component';
 import Header from '../../components/header/header.component';
+import Banner from '../../components/banner/banner.component';
+
 // Utils
 import particlesOptions from '../../particles.json';
+
 // Styles
 import { Container } from './home.styles';
 import Services from '../../components/workspaces/services/services.page';
@@ -21,6 +24,10 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Header />
+
+      <div className="banner">
+        <Banner />
+      </div>
 
       <div className="home">
         <Particles

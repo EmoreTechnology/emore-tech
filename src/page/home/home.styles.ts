@@ -6,6 +6,13 @@ export const Container = styled.div`
   justify-content: space-between;
   width: 100%;
 
+  > .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 840px;
+  }
+
   > .home {
     display: flex;
     flex-direction: column;
