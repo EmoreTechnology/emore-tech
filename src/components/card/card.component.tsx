@@ -1,13 +1,19 @@
 import React from 'react';
 import { Container } from './card.styles';
-import {AboutUsProps}  from '../../utils/models/about-us.mock';
+export interface AboutUsProps {
+    description: string;
+    title: string;
+    icon: string;
+}
 
 const Card: React.FC<AboutUsProps> = ({ description, icon, title}) => {
 	return (
 		<Container>
 			<div>
-				<p>{icon}</p>
-				<h1>{title}</h1>
+				<div className="section">
+					<img src={icon} alt="" />
+					<h1>{title}</h1>
+				</div>
 				<p>{description}</p>
 			</div>
 		</Container>

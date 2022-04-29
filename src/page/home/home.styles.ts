@@ -13,20 +13,22 @@ export const Container = styled.div`
 		width: 100%;
 
 		> .tsparticles {
-				position: fixed;
-				height: 100%;
-				width: 100%;
-				margin: 0;
-				padding: 0;
-				left: 0;
-				top: 0;
-				z-index: -1;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			left: 0;
+			top: 0;
+			z-index: -1;
 		}
 	}
 
 	> .aboutUs {
 		display: flex;
+		width: 100%;
 		margin-top: 20px;
+		background: rgba(44, 69, 141, 0.30);
 	}
 `;
 

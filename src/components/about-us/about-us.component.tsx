@@ -6,14 +6,16 @@ import {AboutUsTitle} from '../../utils/mocks/about-us.mock';
 const AboutUs: React.FC = () => {
 	return (
 		<Container>
-			{AboutUsTitle.map((i) => (
-				<Card 
-					key={i.title}
-					title={i.title}
-					description={i.description}
-					icon={i.icon}
-				/>
-			))}
+			<div className="content">
+				{AboutUsTitle.map((i) => (
+					<Card 
+						key={i.title}
+						title={i.title}
+						description={i.description}
+						icon={i.icon}
+					/>
+				))}
+			</div>
 		</Container>
 	);
 }
