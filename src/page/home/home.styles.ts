@@ -32,7 +32,9 @@ export const Container = styled.div`
 
   > .aboutUs {
     display: flex;
-    margin-top: 70px;
+    width: 100%;
+    margin-top: 20px;
+    background: rgba(44, 69, 141, 0.3);
   }
 
   > .services {
