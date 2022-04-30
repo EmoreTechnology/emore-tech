@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ title, language }) => {
 
       <div className="language">
         {arrayHeaderLanguage.map((lang) => (
-          <p>{lang.language}</p>
+          <h1 key={lang.language}>{lang.language}</h1>
         ))}
       </div>
     </Container>

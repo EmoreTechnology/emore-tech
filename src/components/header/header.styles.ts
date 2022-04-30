@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +14,7 @@ export const Container = styled.div`
   @media (min-width: 768px) {
     height: 70px;
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   > .wrapper {
