@@ -5,12 +5,13 @@ export const Container = styled.div`
   justify-content: start;
   flex-direction: column;
   align-items: center;
-  max-width: 480px;
-  height: 600px;
+  max-width: 280px;
+  height: 630px;
   background: #032326;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin: 0 20px 10px 0;
+  padding: 15px;
 
   > h1 {
     font-family: 'Inter';
@@ -31,13 +32,12 @@ export const Container = styled.div`
   }
 
   > p {
-    padding: 0 16px;
     font-family: 'Poppins';
     font-style: 400;
     font-weight: 600;
     font-size: 36px;
-    line-height: 16px;
     text-align: center;
     color: #ffffff;
+    margin: 0;
   }
 `;
