@@ -8,6 +8,7 @@ import { ISourceOptions } from 'tsparticles-engine';
 import AboutUs from '../../components/workspaces/about-us/about-us.component';
 import Header from '../../components/header/header.component';
 import Banner from '../../components/banner/banner.component';
+import Servicos from '../../components/workspaces/servicos/servico';
 
 // Utils
 import particlesOptions from '../../particles.json';
@@ -40,6 +41,10 @@ const Home: React.FC = () => {
 
       <div className="aboutUs">
         <AboutUs />
+      </div>
+
+      <div className="servicos">
+        <Servicos />
       </div>
 
       <div className="services">

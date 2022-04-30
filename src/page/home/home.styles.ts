@@ -16,7 +16,6 @@ export const Container = styled.div`
   > .home {
     display: flex;
     flex-direction: column;
-
     width: 100%;
 
     > .tsparticles {
@@ -33,7 +32,7 @@ export const Container = styled.div`
 
   > .aboutUs {
     display: flex;
-    margin-top: 20px;
+    margin-top: 70px;
   }
 
   > .services {
