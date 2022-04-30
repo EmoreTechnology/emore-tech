@@ -3,7 +3,7 @@ import { Container } from './tooltip.styles';
 
 interface TooltipProps {
   icon: string;
-  telephone?: number;
+  telephone?: string;
   email?: string;
   description?: string;
 }
@@ -11,7 +11,7 @@ interface TooltipProps {
 const Tooltip: React.FC<TooltipProps> = ({ description, icon, email, telephone }) => {
   return (
     <Container>
-      <p>{icon}</p>
+      <img src={icon} alt="" />
       <span />
       <p>{telephone || email}</p>
       <p>{description}</p>

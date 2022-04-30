@@ -5,17 +5,21 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 450px;
-  height: 580px;
+  width: 300px;
   background: #032326;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  padding: 15px;
+
+  @media (min-width: 768px) {
+    width: 450px;
+  }
 
   > h1 {
     font-family: 'Inter';
     font-style: 400;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 27px;
     line-height: 29px;
     background: linear-gradient(
         90.88deg,
@@ -27,19 +31,26 @@ export const Container = styled.div`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
   }
 
   > form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 410px;
+    width: 260px;
     height: 100%;
     margin-top: 24px;
 
+    @media (min-width: 768px) {
+      width: 410px;
+    }
+
     > input {
       text-align: center;
-      margin-bottom: 24px;
       box-shadow: 0 0 0 0;
       outline: 0;
       background: #dedede;
@@ -47,7 +58,13 @@ export const Container = styled.div`
       border-radius: 10px;
       border: none;
       width: 100%;
-      height: 41px;
+      margin-bottom: 15px;
+      height: 25px;
+
+      @media (min-width: 768px) {
+        height: 41px;
+        margin-bottom: 24px;
+      }
     }
 
     > textarea::-webkit-input-placeholder {
