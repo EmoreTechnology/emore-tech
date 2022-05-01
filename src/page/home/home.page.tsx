@@ -16,6 +16,7 @@ import particlesOptions from '../../particles.json';
 // Styles
 import { Container } from './home.styles';
 import Services from '../../components/workspaces/services/services.page';
+import Slider from '../../components/slider/slider.component';
 
 const Home: React.FC = () => {
   const particlesInit = useCallback((engine: Engine): any => {
@@ -28,6 +29,10 @@ const Home: React.FC = () => {
 
       <div className="banner">
         <Banner />
+      </div>
+
+      <div>
+        <Slider />
       </div>
 
       <div className="home">
