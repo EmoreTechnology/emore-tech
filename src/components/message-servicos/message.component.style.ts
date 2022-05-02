@@ -6,18 +6,21 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 280px;
-  height: 630px;
   background: #032326;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin: 0 20px 10px 0;
-  padding: 15px;
+
+  @media (min-width: 768px) {
+    height: 530px;
+    padding: 15px;
+  }
 
   > h1 {
     font-family: 'Inter';
     font-style: 400;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 29px;
     background: linear-gradient(
         90.88deg,
@@ -29,15 +32,25 @@ export const Container = styled.div`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
   }
 
   > p {
     font-family: 'Poppins';
     font-style: 400;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 24px;
     text-align: center;
     color: #ffffff;
+    padding: 10px;
     margin: 0;
+
+    @media (min-width: 768px) {
+      font-size: 36px;
+      padding: 0;
+    }
   }
 `;
