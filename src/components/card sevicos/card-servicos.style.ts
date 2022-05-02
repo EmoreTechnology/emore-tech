@@ -25,16 +25,21 @@ export const Container = styled.div`
       justify-content: start;
 
       > img {
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
         margin-right: 20px;
+
+        @media (min-width) {
+          width: 45px;
+          height: 45px;
+        }
       }
 
       > h1 {
         font-family: 'Inter';
         font-style: 400;
         font-weight: 600;
-        font-size: 36px;
+        font-size: 24px;
         line-height: 29px;
         background: linear-gradient(
             90.88deg,
@@ -47,6 +52,10 @@ export const Container = styled.div`
         background-clip: text;
         text-fill-color: transparent;
         margin: 0;
+
+        @media (min-width) {
+          font-size: 36px;
+        }
       }
     }
 
@@ -54,11 +63,15 @@ export const Container = styled.div`
       font-family: 'Poppins';
       font-style: 400;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 16px;
       text-align: center;
       color: #ffffff;
       margin: 15px 0 0 0;
+
+      @media (min-width) {
+        font-size: 16px;
+      }
     }
   }
 `;
