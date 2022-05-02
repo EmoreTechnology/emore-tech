@@ -32,7 +32,6 @@ const Slider: React.FC = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <p>teste</p>
     </Container>
   );
 };
