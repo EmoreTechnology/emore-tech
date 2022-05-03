@@ -8,6 +8,8 @@ import { Container } from './header.styles';
 
 import { Anchor } from 'antd';
 import { useState, useEffect } from 'react';
+import { faAlignJustify } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const { Link } = Anchor;
 
@@ -17,20 +19,51 @@ const Header: React.FC<HeaderProps> = ({ title, language }) => {
     setTargetOffset(window.innerHeight / 65);
   }, []);
 
+  const [on, setOn] = React.useState(false);
+
+  const handleOn = () => {
+    setOn(!on);
+  };
+
   return (
     <Container>
-      <Anchor targetOffset={targetOffset}>
-        <Link href="#home" title="Home" />
-        <Link href="#about-us" title="Sobre nós" />
-        <Link href="#servicess" title="Serviços" />
-        <Link href="#tecnologias" title="Tecnologias" />
-        <Link href="#tooltip" title="Contato" />
-      </Anchor>
-
-      <div className="language">
-        {arrayHeaderLanguage.map((lang) => (
-          <h1 key={lang.language}>{lang.language}</h1>
-        ))}
+      <aside className={on ? 'icon-menu' : ''}>
+        <a href="#" onClick={handleOn}>
+          <FontAwesomeIcon icon={faAlignJustify} className="menu-open" />
+        </a>
+        <div className="language-mobile">
+          {arrayHeaderLanguage.map((lang) => (
+            <h1 key={lang.language}>{lang.language}</h1>
+          ))}
+        </div>
+      </aside>
+      {on && (
+        <Anchor className="menu-open" targetOffset={targetOffset}>
+          <Link href="#home" title="Home" />
+          <Link href="#about-us" title="Sobre nós" />
+          <Link href="#servicess" title="Serviços" />
+          <Link href="#tecnology" title="Tecnologias" />
+          <Link href="#tooltip" title="Contato" />
+          <div className="language">
+            {arrayHeaderLanguage.map((lang) => (
+              <h1 key={lang.language}>{lang.language}</h1>
+            ))}
+          </div>
+        </Anchor>
+      )}
+      <div className="content">
+        <Anchor className="menu" targetOffset={targetOffset}>
+          <Link href="#home" title="Home" />
+          <Link href="#about-us" title="Sobre nós" />
+          <Link href="#servicess" title="Serviços" />
+          <Link href="#tecnology" title="Tecnologias" />
+          <Link href="#tooltip" title="Contato" />
+          <div className="language">
+            {arrayHeaderLanguage.map((lang) => (
+              <h1 key={lang.language}>{lang.language}</h1>
+            ))}
+          </div>
+        </Anchor>
       </div>
     </Container>
   );

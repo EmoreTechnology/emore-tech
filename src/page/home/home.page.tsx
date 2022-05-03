@@ -25,14 +25,12 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Header />
+      <div id="home">
+        <Header />
+      </div>
 
       <div id="home" className="banner">
         <Banner />
-      </div>
-
-      <div>
-        <Slider />
       </div>
 
       <div className="home">
@@ -50,6 +48,10 @@ const Home: React.FC = () => {
 
       <div id="servicess" className="servicos">
         <Servicos />
+      </div>
+
+      <div id="tecnology" className="carrosel">
+        <Slider />
       </div>
 
       <div id="tooltip" className="services">
