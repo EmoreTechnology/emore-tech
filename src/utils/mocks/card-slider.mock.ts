@@ -6,7 +6,7 @@ import designer from '../../assets/web-design.png';
 export const CardSlider = [
   {
     description:
-      'Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknow.',
+      'Equipe com vasto conhecimento em tecnologias Front-End, utilizando React Js, React Native criamos interfaces com todas as funcionalidades desejadas.',
     title: 'Front-End',
     icon: frontend,
   },
@@ -17,8 +17,7 @@ export const CardSlider = [
     icon: backend,
   },
   {
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknow.',
+    description: 'Designer integral do seu projeto, criamos interfaces completas e inovadoras.',
     title: 'Designer',
     icon: designer,
   },

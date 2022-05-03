@@ -143,6 +143,7 @@ export const Container = styled.div`
 
     @media (min-width: 768px) {
       font-size: 18px;
+      padding: 15px 0;
     }
   }
 `;
