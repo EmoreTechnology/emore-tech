@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background: rgba(44, 69, 141, 0.3);
-  height: 700px;
+  height: 800px;
   width: 100%;
 
   > .tooltip {
@@ -21,7 +21,7 @@ export const Container = styled.div`
     > div + div {
       margin-top: 14px;
 
-      @media (min-width: 488px) {
+      @media (min-width: 768px) {
         margin: 0;
       }
     }

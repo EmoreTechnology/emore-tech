@@ -33,15 +33,19 @@ export const Container = styled.div`
   > .aboutUs {
     display: flex;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   > .services {
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   > .servicos {
-    padding: 100px 0;
+    padding: 50px 0;
+
+    @media (min-width: 768px) {
+      padding: 100px 0;
+    }
   }
 `;
