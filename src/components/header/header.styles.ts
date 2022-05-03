@@ -10,6 +10,7 @@ export const Container = styled.div`
   background: #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 0;
 
   @media (min-width: 768px) {
     height: 70px;
@@ -17,33 +18,23 @@ export const Container = styled.div`
     flex-wrap: nowrap;
   }
 
-  > .wrapper {
+  div {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-
-    > p {
-      cursor: pointer;
-      font-family: 'Inter';
-      font-style: 400;
-      font-weight: 600;
-      font-size: 12px;
-      color: #a1a1a1;
-
-      :hover {
-        color: #fff;
-      }
-
-      @media (min-width: 768px) {
-        font-size: 18px;
-        margin-right: 24px;
-      }
-    }
 
     @media (min-width: 768px) {
-      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .ant-anchor-ink {
+    display: flex;
+  }
+
+  .ant-anchor {
+    display: flex;
+
+    @media (min-width: 768px) {
+      width: 100%;
     }
   }
 
@@ -53,9 +44,9 @@ export const Container = styled.div`
     width: 100%;
     justify-content: end;
 
-    > p {
+    > h1 {
       cursor: pointer;
-      margin: 0 14px 0 0;
+      margin: 10px 14px 0 0;
       padding: 0;
       font-family: 'Inter';
       font-style: 400;
@@ -74,6 +65,24 @@ export const Container = styled.div`
     }
     @media (min-width: 768px) {
       width: 10%;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: 400;
+    font-weight: 600;
+    font-size: 12px;
+    color: #a1a1a1;
+    margin: 0 10px;
+
+    :hover {
+      color: #fff;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 18px;
     }
   }
 `;

@@ -31,6 +31,7 @@ export const Container = styled.div`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    margin: 10px 0;
 
     @media (min-width: 768px) {
       font-size: 36px;
@@ -59,11 +60,11 @@ export const Container = styled.div`
       border: none;
       width: 100%;
       margin-bottom: 15px;
-      height: 25px;
+      height: 18px;
 
       @media (min-width: 768px) {
-        height: 41px;
-        margin-bottom: 24px;
+        height: 30px;
+        margin-bottom: 15px;
       }
     }
 
@@ -74,7 +75,7 @@ export const Container = styled.div`
     > textarea {
       text-align: center;
       width: 100%;
-      height: 117px;
+      height: 90px;
       margin-bottom: 24px;
       border-radius: 10px;
       background: #dedede;

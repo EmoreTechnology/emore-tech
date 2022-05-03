@@ -6,9 +6,8 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   background: rgba(44, 69, 141, 0.3);
-  height: 800px;
+  height: 700px;
   width: 100%;
-  margin-top: 140px;
 
   @media (min-width: 768px) {
     flex-direction: row;

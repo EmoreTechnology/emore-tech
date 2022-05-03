@@ -6,8 +6,9 @@ export const Container = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  height: 800px;
+  height: 700px;
   width: 100%;
+  background: rgba(44, 69, 141, 0.3);
 
   > .content {
     display: flex;

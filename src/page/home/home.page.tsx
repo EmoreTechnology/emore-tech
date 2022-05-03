@@ -27,7 +27,7 @@ const Home: React.FC = () => {
     <Container>
       <Header />
 
-      <div className="banner">
+      <div id="home" className="banner">
         <Banner />
       </div>
 
@@ -44,15 +44,15 @@ const Home: React.FC = () => {
         />
       </div>
 
-      <div className="aboutUs">
+      <div id="about-us" className="aboutUs">
         <AboutUs />
       </div>
 
-      <div className="servicos">
+      <div id="servicess" className="servicos">
         <Servicos />
       </div>
 
-      <div className="services">
+      <div id="tooltip" className="services">
         <Services />
       </div>
     </Container>

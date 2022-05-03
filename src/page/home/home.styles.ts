@@ -33,12 +33,15 @@ export const Container = styled.div`
   > .aboutUs {
     display: flex;
     width: 100%;
-    margin-top: 20px;
-    background: rgba(44, 69, 141, 0.3);
+    padding-top: 100px;
   }
 
   > .services {
     display: flex;
-    margin-top: 140px;
+    padding-bottom: 100px;
+  }
+
+  > .servicos {
+    padding: 100px 0;
   }
 `;
