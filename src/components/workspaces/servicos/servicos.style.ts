@@ -8,9 +8,9 @@ export const Container = styled.div`
   background: rgba(44, 69, 141, 0.3);
   height: 800px;
   width: 100%;
-  margin-top: 140px;
 
   @media (min-width: 768px) {
     flex-direction: row;
+    height: 700px;
   }
 `;

@@ -8,6 +8,7 @@ export const Container = styled.div`
   align-items: center;
   height: 800px;
   width: 100%;
+  background: rgba(44, 69, 141, 0.3);
 
   > .content {
     display: flex;

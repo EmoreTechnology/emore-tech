@@ -33,12 +33,26 @@ export const Container = styled.div`
   > .aboutUs {
     display: flex;
     width: 100%;
-    margin-top: 20px;
-    background: rgba(44, 69, 141, 0.3);
+    padding-top: 50px;
   }
 
   > .services {
-    display: flex;
-    margin-top: 140px;
+    padding-bottom: 50px;
+  }
+
+  > .servicos {
+    padding-top: 50px;
+
+    @media (min-width: 768px) {
+      padding-top: 100px;
+    }
+  }
+
+  > .carrosel {
+    padding: 50px 0;
+
+    @media (min-width: 768px) {
+      padding: 100px 0;
+    }
   }
 `;

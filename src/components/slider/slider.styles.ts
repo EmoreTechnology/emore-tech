@@ -4,10 +4,17 @@ export const Container = styled.div`
   display: revert;
   flex-direction: row;
   width: 100%;
+  background: rgba(44, 69, 141, 0.3);
+  padding: 40px 0;
+  height: 700px;
 
   .swiper {
-    width: 100%;
+    width: 90%;
     height: 100%;
+
+    @media (min-width: 768px) {
+      width: 70%;
+    }
   }
   .swiper-wrapper {
     margin: 0;

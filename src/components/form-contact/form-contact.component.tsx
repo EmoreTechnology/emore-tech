@@ -7,7 +7,7 @@ const ContactForm: React.FC = () => {
     <Container>
       <h1>Entre em contato conosco</h1>
 
-      <form action="https://formsubmit.co/emoretecnologia@gmail.com" method="post">
+      <form action="https://formsubmit.co/emoretecnology@gmail.com" method="post">
         <input type="hidden" name="_next" />
         <input type="text" name="name" placeholder="Nome" required />
         <input type="email" name="email" placeholder="E-mail" required />

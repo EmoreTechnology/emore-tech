@@ -17,45 +17,93 @@ export const Container = styled.div`
     flex-wrap: nowrap;
   }
 
-  > .wrapper {
+  aside {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
-
-    > p {
-      cursor: pointer;
-      font-family: 'Inter';
-      font-style: 400;
-      font-weight: 600;
-      font-size: 12px;
-      color: #a1a1a1;
-
-      :hover {
-        color: #fff;
-      }
-
-      @media (min-width: 768px) {
-        font-size: 18px;
-        margin-right: 24px;
-      }
+    margin: 0;
+    padding-top: 10px;
+    align-items: start;
+    @media (min-width: 768px) {
+      display: none;
     }
 
-    @media (min-width: 768px) {
-      justify-content: center;
+    svg {
+      color: #fff;
+      width: 37px;
+      height: 32px;
     }
   }
 
-  > .language {
+  .content {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  div {
+    display: flex;
+
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .ant-anchor-ink {
+    display: flex;
+  }
+
+  .ant-anchor {
+    display: flex;
+    background: #000;
+    border-radius: 0 0 10px 10px;
+
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+
+    > .language {
+      display: none;
+      flex-direction: row;
+      width: 100%;
+      justify-content: end;
+      align-items: center;
+
+      > h1 {
+        cursor: pointer;
+        margin: 0px 14px 0 0;
+        font-family: 'Inter';
+        font-style: 400;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        color: #a1a1a1;
+
+        :hover {
+          color: #fff;
+        }
+
+        @media (min-width: 768px) {
+          font-size: 18px;
+        }
+      }
+      @media (min-width: 768px) {
+        display: flex;
+        width: 10%;
+      }
+    }
+  }
+
+  .language-mobile {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: end;
 
-    > p {
+    > h1 {
       cursor: pointer;
-      margin: 0 14px 0 0;
+      margin: 0px 14px 0 0;
       padding: 0;
       font-family: 'Inter';
       font-style: 400;
@@ -73,7 +121,29 @@ export const Container = styled.div`
       }
     }
     @media (min-width: 768px) {
+      display: none;
       width: 10%;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: 400;
+    font-weight: 600;
+    font-size: 12px;
+    color: #a1a1a1;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 5px 0;
+
+    :hover {
+      color: #fff;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      padding: 15px 0;
     }
   }
 `;

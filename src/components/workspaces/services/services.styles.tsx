@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background: rgba(44, 69, 141, 0.3);
-  height: 900px;
+  height: 800px;
   width: 100%;
 
   > .tooltip {
@@ -21,7 +21,7 @@ export const Container = styled.div`
     > div + div {
       margin-top: 14px;
 
-      @media (min-width: 488px) {
+      @media (min-width: 768px) {
         margin: 0;
       }
     }
@@ -37,10 +37,10 @@ export const Container = styled.div`
 
   > .contact {
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
 
     @media (min-width: 768px) {
-      margin-top: 60px;
+      margin-top: 30px;
     }
   }
 `;

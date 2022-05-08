@@ -4,6 +4,7 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import type { Engine } from 'tsparticles-engine';
 import { ISourceOptions } from 'tsparticles-engine';
+
 // Components
 import AboutUs from '../../components/workspaces/about-us/about-us.component';
 import Header from '../../components/header/header.component';
@@ -25,14 +26,12 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Header />
-
-      <div className="banner">
-        <Banner />
+      <div id="home">
+        <Header />
       </div>
 
-      <div>
-        <Slider />
+      <div id="home" className="banner">
+        <Banner />
       </div>
 
       <div className="home">
@@ -44,15 +43,19 @@ const Home: React.FC = () => {
         />
       </div>
 
-      <div className="aboutUs">
+      <div id="about-us" className="aboutUs">
         <AboutUs />
       </div>
 
-      <div className="servicos">
+      <div id="servicess" className="servicos">
         <Servicos />
       </div>
 
-      <div className="services">
+      <div id="tecnology" className="carrosel">
+        <Slider />
+      </div>
+
+      <div id="tooltip" className="services">
         <Services />
       </div>
     </Container>
