@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useCallback } from 'react';
+import React, { Suspense, useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import type { Engine } from 'tsparticles-engine';
@@ -13,20 +13,13 @@ import Servicos from '../../components/workspaces/servicos/servico';
 
 // Utils
 import particlesOptions from '../../particles.json';
-import { useTranslation } from 'react-i18next';
 
 // Styles
 import { Container } from './home.styles';
 import Services from '../../components/workspaces/services/services.page';
 import Slider from '../../components/slider/slider.component';
-// import '../../i18n/i18n';
 
 const Home: React.FC = () => {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (language: any) => {
-    i18n.changeLanguage(language);
-  };
-
   const particlesInit = useCallback((engine: Engine): any => {
     loadFull(engine);
   }, []);
@@ -34,23 +27,11 @@ const Home: React.FC = () => {
   return (
     <Container>
       <div id="home">
-        <Header />
+        <Suspense fallback={<div>...</div>}>
+          <Header />
+        </Suspense>
       </div>
 
-      <div>
-        <button style={{ background: '#fff' }} onClick={() => changeLanguage('en')}>
-          EN
-        </button>
-        <button style={{ background: '#fff' }} onClick={() => changeLanguage('pt')}>
-          PT
-        </button>
-        <hr />
-        <div>
-          <h1 style={{ background: '#fff' }}>{t('title')}</h1>
-        </div>
-        <div style={{ background: '#fff' }}>{t('description.part1')}</div>
-        <div style={{ background: '#fff' }}>{t('description.part2')}</div>
-      </div>
       <div id="home" className="banner">
         <Banner />
       </div>

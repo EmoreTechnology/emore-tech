@@ -10,6 +10,7 @@ const Services: React.FC = () => {
       <div className="tooltip">
         {tooltipArray.map((tool) => (
           <Tooltip
+            key={tool.icon}
             icon={tool.icon}
             telephone={tool.telephone}
             description={tool.description}

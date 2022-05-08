@@ -9,12 +9,17 @@ const Servicos: React.FC = () => {
   return (
     <Container>
       {messageArray.map((tool) => (
-        <Message title={tool.title} description={tool.description} />
+        <Message key={tool.title} title={tool.title} description={tool.description} />
       ))}
 
       <div className="content">
         {servicosArray.map((tool) => (
-          <ServicosCard icon={tool.icon} title={tool.title} description={tool.description} />
+          <ServicosCard
+            key={tool.icon}
+            icon={tool.icon}
+            title={tool.title}
+            description={tool.description}
+          />
         ))}
       </div>
     </Container>
