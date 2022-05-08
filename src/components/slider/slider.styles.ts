@@ -6,6 +6,7 @@ export const Container = styled.div`
   width: 100%;
   background: rgba(44, 69, 141, 0.3);
   padding: 40px 0;
+  height: 700px;
 
   .swiper {
     width: 90%;

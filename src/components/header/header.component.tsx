@@ -31,11 +31,11 @@ const Header: React.FC<HeaderProps> = ({ title, language }) => {
         <a href="#" onClick={handleOn}>
           <FontAwesomeIcon icon={faAlignJustify} className="menu-open" />
         </a>
-        <div className="language-mobile">
+        {/* <div className="language-mobile">
           {arrayHeaderLanguage.map((lang) => (
             <h1 key={lang.language}>{lang.language}</h1>
           ))}
-        </div>
+        </div> */}
       </aside>
       {on && (
         <Anchor className="menu-open" targetOffset={targetOffset}>
@@ -44,11 +44,11 @@ const Header: React.FC<HeaderProps> = ({ title, language }) => {
           <Link href="#servicess" title="Serviços" />
           <Link href="#tecnology" title="Tecnologias" />
           <Link href="#tooltip" title="Contato" />
-          <div className="language">
+          {/* <div className="language">
             {arrayHeaderLanguage.map((lang) => (
               <h1 key={lang.language}>{lang.language}</h1>
             ))}
-          </div>
+          </div> */}
         </Anchor>
       )}
       <div className="content">
@@ -58,11 +58,11 @@ const Header: React.FC<HeaderProps> = ({ title, language }) => {
           <Link href="#servicess" title="Serviços" />
           <Link href="#tecnology" title="Tecnologias" />
           <Link href="#tooltip" title="Contato" />
-          <div className="language">
+          {/* <div className="language">
             {arrayHeaderLanguage.map((lang) => (
               <h1 key={lang.language}>{lang.language}</h1>
             ))}
-          </div>
+          </div> */}
         </Anchor>
       </div>
     </Container>

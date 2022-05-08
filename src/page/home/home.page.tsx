@@ -4,6 +4,7 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import type { Engine } from 'tsparticles-engine';
 import { ISourceOptions } from 'tsparticles-engine';
+
 // Components
 import AboutUs from '../../components/workspaces/about-us/about-us.component';
 import Header from '../../components/header/header.component';
