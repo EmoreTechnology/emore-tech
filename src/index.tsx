@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './page/home/home.page';
+import './i18n/i18n';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Home />
+    </Suspense>
   </React.StrictMode>,
   document.getElementById('root'),
 );

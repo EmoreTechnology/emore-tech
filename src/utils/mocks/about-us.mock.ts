@@ -4,17 +4,17 @@ import vision from '../../assets/vision.png';
 
 export const AboutUsTitle = [
   {
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+    description: 'Valor de um texto comum Valor de um texto comum Valor de um texto comum.',
     title: 'Missão',
     icon: mission,
   },
   {
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+    description: 'Valor de um texto comum Valor de um texto comum Valor de um texto comum.',
     title: 'Valores',
     icon: value,
   },
   {
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+    description: 'Valor de um texto comum Valor de um texto comum Valor de um texto comum. ',
     title: 'Visão',
     icon: vision,
   },

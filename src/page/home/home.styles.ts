@@ -13,6 +13,12 @@ export const Container = styled.div`
     height: 840px;
   }
 
+  > div {
+    p {
+      color: white;
+    }
+  }
+
   > .home {
     display: flex;
     flex-direction: column;

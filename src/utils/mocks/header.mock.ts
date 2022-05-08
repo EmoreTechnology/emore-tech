@@ -1,26 +1,26 @@
 export const arrayHeaderTitle = [
   {
-    title: "Home",
+    title: 'Home',
   },
   {
-    title: "Sobre nós",
+    title: 'Sobre nós',
   },
   {
-    title: "Serviços",
+    title: 'Serviços',
   },
   {
-    title: "Tecnologias",
+    title: 'Tecnologias',
   },
   {
-    title: "Contato",
+    title: 'Contato',
   },
 ];
 
 export const arrayHeaderLanguage = [
   {
-    language: "EN",
+    language: 'EN',
   },
   {
-    language: "PT",
+    language: 'PT',
   },
 ];
