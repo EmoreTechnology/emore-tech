@@ -22,7 +22,7 @@ export const Container = styled.div`
       text-decoration: none;
     }
 
-    > div + div {
+    > a + a {
       margin-top: 14px;
 
       @media (min-width: 768px) {
