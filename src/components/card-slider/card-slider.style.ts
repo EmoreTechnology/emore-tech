@@ -4,7 +4,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
+  width: 190px;
+  height: 170px;
   background: #032326;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -12,7 +13,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
 
   @media (min-width: 768px) {
-    width: 280px;
+    width: 400px;
   }
 
   > div {

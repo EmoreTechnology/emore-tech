@@ -3,13 +3,18 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   width: 280px;
+  height: 230px;
   background: #032326;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin: 20px;
   flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    height: 250px;
+  }
 
   > div {
     display: flex;
@@ -57,7 +62,7 @@ export const Container = styled.div`
       }
     }
     > p {
-      padding: 12px;
+      padding: 0 10px 10px 10px;
       font-family: 'Poppins';
       font-style: 400;
       font-weight: 600;

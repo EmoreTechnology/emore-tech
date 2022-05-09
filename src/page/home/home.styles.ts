@@ -11,6 +11,10 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 600px;
+
+    @media (min-width: 768px) {
+      height: 900px;
+    }
   }
 
   > div {
