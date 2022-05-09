@@ -1,26 +1,47 @@
 import React from 'react';
-import { Container } from './servicos.style';
+import { useTranslation } from 'react-i18next';
+import develop from '../../../assets/desenv.png';
+import lgpd from '../../../assets/lgpd.png';
+import manutention from '../../../assets/manutencao.png';
+// Assets
+import design from '../../../assets/web-design.png';
+// Components
 import ServicosCard from '../../card sevicos/card-servicos.component';
-import { servicosArray } from '../../../utils/mocks/servicos.mock';
 import Message from '../../message-servicos/message.component';
-import { messageArray } from '../../../utils/mocks/message.mock';
+// Styles
+import { Container } from './servicos.style';
 
 const Servicos: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <Container>
-      {messageArray.map((tool) => (
-        <Message key={tool.title} title={tool.title} description={tool.description} />
-      ))}
+      <Message title={t('titleMessageServicos')} description={t('messageServicos')} />
 
       <div className="content">
-        {servicosArray.map((tool) => (
-          <ServicosCard
-            key={tool.icon}
-            icon={tool.icon}
-            title={tool.title}
-            description={tool.description}
-          />
-        ))}
+        <ServicosCard
+          icon={design}
+          title={t('titleServicosDesign')}
+          description={t('descriptionServicosDesign')}
+        />
+
+        <ServicosCard
+          icon={develop}
+          title={t('titleServicosDeveloping')}
+          description={t('descriptionServicosDeveloping')}
+        />
+
+        <ServicosCard
+          icon={lgpd}
+          title={t('titleServicosLGPD')}
+          description={t('descriptionServicosLGPD')}
+        />
+
+        <ServicosCard
+          icon={manutention}
+          title={t('titleServicosMaintenance')}
+          description={t('descriptionServicosMaintenance')}
+        />
       </div>
     </Container>
   );

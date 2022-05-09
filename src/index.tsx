@@ -1,8 +1,9 @@
-import React, { Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './page/home/home.page';
+// import Home from './page/home/home.page';
 import './i18n/i18n';
+const Home = lazy(() => import('./page/home/home.page'));
 
 ReactDOM.render(
   <React.StrictMode>
