@@ -31,5 +31,10 @@
 	"contactTelephone": "(051) 98342-5699",
 	"descriptionContactTelephone": "Retorno imediáto.",
 	"contactEmail": "exemplo@exemplo.com",
-	"descriptionContactEmail": "Retorno em 2hrs."
+	"descriptionContactEmail": "Retorno em 2hrs.",
+	"contactForm": "Entre em contato conosco",
+	"name": "Nome",
+	"email": "E-mail",
+	"message": "Mensagem",
+	"send": "Enviar"
 }
