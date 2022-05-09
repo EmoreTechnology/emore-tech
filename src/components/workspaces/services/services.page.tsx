@@ -17,7 +17,9 @@ const Services: React.FC = () => {
   return (
     <Container>
       <div className="tooltip">
-        <Tooltip icon={linkedin} description={t('descriptionContactLinkedin')} />
+        <a href="https://www.linkedin.com/in/estefani-mor%C3%A9-12892b16a/" target="_blank">
+          <Tooltip icon={linkedin} description={t('descriptionContactLinkedin')} />
+        </a>
 
         <a
           rel="stylesheet"
@@ -30,11 +32,13 @@ const Services: React.FC = () => {
           />
         </a>
 
-        <Tooltip
-          icon={email}
-          description={t('descriptionContactEmail')}
-          email={t('contactEmail')}
-        />
+        <a href="mailto:emoretecnology@gmail.com?subject=Questions">
+          <Tooltip
+            icon={email}
+            description={t('descriptionContactEmail')}
+            email={t('contactEmail')}
+          />
+        </a>
       </div>
 
       <div className="contact">
