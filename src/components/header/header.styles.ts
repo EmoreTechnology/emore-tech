@@ -35,19 +35,15 @@ export const Container = styled.div`
   }
 
   .content {
-    display: none;
-
-    @media (min-width: 768px) {
-      display: flex;
-    }
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   div {
     display: flex;
-
-    @media (min-width: 768px) {
-      width: 100%;
-    }
+    width: 100%;
+    justify-content: center;
   }
 
   .ant-anchor-ink {
@@ -58,39 +54,32 @@ export const Container = styled.div`
     display: flex;
     background: #000;
     border-radius: 0 0 10px 10px;
+    height: 20px;
 
     @media (min-width: 768px) {
       width: 100%;
+      height: 40px;
+      align-items: center;
     }
 
     > .language {
-      display: none;
+      display: flex;
       flex-direction: row;
       width: 100%;
-      justify-content: end;
+      height: 20px;
       align-items: center;
 
-      > h1 {
-        cursor: pointer;
-        margin: 0px 14px 0 0;
-        font-family: 'Inter';
-        font-style: 400;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 17px;
-        color: #a1a1a1;
-
-        :hover {
-          color: #fff;
-        }
-
-        @media (min-width: 768px) {
-          font-size: 18px;
-        }
-      }
       @media (min-width: 768px) {
+        margin-top: 8px;
+      }
+
+      > .flag {
         display: flex;
-        width: 10%;
+        width: 14px;
+        height: 14px;
+      }
+      > img + img {
+        margin-left: 10px;
       }
     }
   }
@@ -100,6 +89,7 @@ export const Container = styled.div`
     flex-direction: row;
     width: 100%;
     justify-content: end;
+    margin-top: 14px;
 
     > h1 {
       cursor: pointer;
@@ -126,8 +116,19 @@ export const Container = styled.div`
     }
   }
 
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
   a {
     cursor: pointer;
+    text-align: center;
     font-family: 'Inter';
     font-style: 400;
     font-weight: 600;

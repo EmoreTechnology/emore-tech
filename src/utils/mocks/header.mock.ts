@@ -1,10 +1,13 @@
+import en from '../../assets/bandeira-estados-unidos.png';
+import pt from '../../assets/bandeira-do-brasil.png';
+
 export const arrayHeaderLanguage = [
   {
-    language: 'EN',
+    language: en,
     initials: 'en',
   },
   {
-    language: 'PT',
+    language: pt,
     initials: 'pt',
   },
 ];
