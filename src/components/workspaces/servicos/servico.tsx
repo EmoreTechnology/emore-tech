@@ -16,7 +16,7 @@ const Servicos: React.FC = () => {
 
   return (
     <Container>
-      <Message title={t('titleMessageServicos')} description={t('messageServicos')} />
+      {/* <Message title={t('titleMessageServicos')} description={t('messageServicos')} /> */}
 
       <div className="content">
         <ServicosCard

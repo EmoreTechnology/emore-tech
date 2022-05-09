@@ -26,8 +26,8 @@ const AboutUs: React.FC = () => {
           icon={value}
         />
         <Card
-          title={t('aboutUsTitleVision')}
           description={t('aboutUsDescriptionVision')}
+          title={t('aboutUsTitleVision')}
           icon={vision}
         />
       </div>

@@ -38,6 +38,7 @@ export const Container = styled.div`
     display: flex;
     width: 100%;
     justify-content: center;
+    z-index: 10;
   }
 
   div {
@@ -54,11 +55,10 @@ export const Container = styled.div`
     display: flex;
     background: #000;
     border-radius: 0 0 10px 10px;
-    height: 20px;
+    height: 40px;
 
     @media (min-width: 768px) {
       width: 100%;
-      height: 40px;
       align-items: center;
     }
 
@@ -68,10 +68,6 @@ export const Container = styled.div`
       width: 100%;
       height: 20px;
       align-items: center;
-
-      @media (min-width: 768px) {
-        margin-top: 8px;
-      }
 
       > .flag {
         display: flex;

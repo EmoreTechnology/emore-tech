@@ -10,7 +10,11 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 840px;
+    height: 600px;
+
+    @media (min-width: 768px) {
+      height: 900px;
+    }
   }
 
   > div {
