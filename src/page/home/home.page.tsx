@@ -1,23 +1,23 @@
 // Dependencies
-import React, { useCallback } from 'react';
+import React, { lazy, useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import type { Engine } from 'tsparticles-engine';
 import { ISourceOptions } from 'tsparticles-engine';
-
-// Components
-import AboutUs from '../../components/workspaces/about-us/about-us.component';
-import Header from '../../components/header/header.component';
-import Banner from '../../components/banner/banner.component';
-import Servicos from '../../components/workspaces/servicos/servico';
 
 // Utils
 import particlesOptions from '../../particles.json';
 
 // Styles
 import { Container } from './home.styles';
-import Services from '../../components/workspaces/services/services.page';
-import Slider from '../../components/slider/slider.component';
+
+// Lazy components
+const Banner = lazy(() => import('../../components/banner/banner.component'));
+const Header = lazy(() => import('../../components/header/header.component'));
+const Slider = lazy(() => import('../../components/slider/slider.component'));
+const AboutUs = lazy(() => import('../../components/workspaces/about-us/about-us.component'));
+const Services = lazy(() => import('../../components/workspaces/services/services.page'));
+const Servicos = lazy(() => import('../../components/workspaces/servicos/servico'));
 
 const Home: React.FC = () => {
   const particlesInit = useCallback((engine: Engine): any => {

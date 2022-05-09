@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from './card-slider.component.style';
+import { Container } from './card-slider.style';
 
 export interface CardSliderProps {
   description: string;

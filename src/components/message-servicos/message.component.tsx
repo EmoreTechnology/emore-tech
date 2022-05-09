@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from './message.component.style';
+import { Container } from './message.style';
 
 interface MessageProps {
   title: string;
