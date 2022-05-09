@@ -19,11 +19,16 @@ const Services: React.FC = () => {
       <div className="tooltip">
         <Tooltip icon={linkedin} description={t('descriptionContactLinkedin')} />
 
-        <Tooltip
-          icon={wpp}
-          telephone={t('contactTelephone')}
-          description={t('descriptionContactTelephone')}
-        />
+        <a
+          rel="stylesheet"
+          href="https://wa.me/+5551983425699?text=Ol%C3%A1,%20gostaria%20de%20ter%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20empresa.%20"
+        >
+          <Tooltip
+            icon={wpp}
+            telephone={t('contactTelephone')}
+            description={t('descriptionContactTelephone')}
+          />
+        </a>
 
         <Tooltip
           icon={email}

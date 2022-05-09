@@ -18,6 +18,10 @@ export const Container = styled.div`
     max-width: 850px;
     margin-top: 28px;
 
+    > a {
+      text-decoration: none;
+    }
+
     > div + div {
       margin-top: 14px;
 

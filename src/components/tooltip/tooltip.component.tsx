@@ -11,7 +11,8 @@ interface TooltipProps {
 const Tooltip: React.FC<TooltipProps> = ({ description, icon, email, telephone }) => {
   return (
     <Container>
-      <img src={icon} alt="" />
+      <img src={icon} alt=""></img>
+
       <span />
       <p>{telephone || email}</p>
       <p>{description}</p>
