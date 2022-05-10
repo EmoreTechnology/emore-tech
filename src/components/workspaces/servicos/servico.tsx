@@ -1,3 +1,4 @@
+// Dependencies
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import develop from '../../../assets/desenv.png';
@@ -7,7 +8,7 @@ import manutention from '../../../assets/manutencao.png';
 import design from '../../../assets/web-design.png';
 // Components
 import ServicosCard from '../../card sevicos/card-servicos.component';
-import Message from '../../message-servicos/message.component';
+// import Message from '../../message-servicos/message.component';
 // Styles
 import { Container } from './servicos.style';
 

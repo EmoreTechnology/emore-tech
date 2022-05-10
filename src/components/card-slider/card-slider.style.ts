@@ -4,8 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 190px;
-  height: 170px;
+  width: 200px;
   background: #032326;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -13,7 +12,8 @@ export const Container = styled.div`
   flex-wrap: wrap;
 
   @media (min-width: 768px) {
-    width: 400px;
+    width: 450px;
+    height: 400px;
   }
 
   > div {
@@ -28,6 +28,7 @@ export const Container = styled.div`
       display: flex;
       flex-direction: row;
       align-items: center;
+      height: 100%;
 
       > img {
         width: 35px;
@@ -62,19 +63,14 @@ export const Container = styled.div`
         }
       }
     }
-    > p {
-      padding: 10px;
-      font-family: 'Poppins';
-      font-style: 400;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 16px;
-      text-align: center;
-      color: #ffffff;
-      margin: 0;
+    > img {
+      padding: 24px;
+      width: inherit;
 
       @media (min-width: 768px) {
-        font-size: 16px;
+        padding: 30px;
+        width: auto;
+        min-width: 250px;
       }
     }
   }

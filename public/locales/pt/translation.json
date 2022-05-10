@@ -21,7 +21,7 @@
 	"titleServicosLGPD": "LGPD",
 	"descriptionServicosLGPD": "As tecnologias atuais necessitam de segurança, então mantemos o software desenvolvido com os padrões da Lei Geral de Proteção de Dados (LGPD) nº 13.709/2018 e o Regulamento Geral sobre a Proteção de Dados (GDPR)",
 	"titleServicosMaintenance": "Manutenção",
-	"descriptionServicosMaintenance": "Mesmo após as entregas de sprint Metodologia Ágil (SCRUM)- o aplicativo ou sistema web não acaba, para se manter ativo e competitivo a novas tendencias é necessário atualizar o software. Proporcionamos toda manutenção desejada para que o projeto esteja de acordo com a necessidade atual.",
+	"descriptionServicosMaintenance": "Mesmo após as entregas de sprint Metodologia Ágil (SCRUM) - o aplicativo ou sistema web não acaba, para se manter ativo e competitivo a novas tendencias é necessário atualizar o software. Proporcionamos toda manutenção desejada para que o projeto esteja de acordo com a necessidade atual.",
 	"titleTecnologyFrontend": "Front-End",
 	"descriptionTecnologyFrontend": "React JS, Typescript, Javascript, Angular, Web Components, Storybook, React Native, Ionic, Flutter",
 	"titleTecnologyBackend": "Back-End",

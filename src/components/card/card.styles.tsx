@@ -13,7 +13,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
 
   @media (min-width: 768px) {
-    height: 250px;
+    height: 350px;
   }
 
   > div {
@@ -72,7 +72,7 @@ export const Container = styled.div`
       color: #ffffff;
 
       @media (min-width: 768px) {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
   }

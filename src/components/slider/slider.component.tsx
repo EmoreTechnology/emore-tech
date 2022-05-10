@@ -9,6 +9,9 @@ import backend from '../../assets/backend.png';
 // Assets
 import frontend from '../../assets/frontend.png';
 import designer from '../../assets/web-design.png';
+import frontendTechnologies from '../../assets/frontend-technologies.png';
+import backendTechnologies from '../../assets/backend-technologies.png';
+import designTechnologies from '../../assets/design-technologies.png';
 // Components
 import CardSlide from '../card-slider/card-slider.component';
 // Styles
@@ -23,7 +26,7 @@ const Slider: React.FC = () => {
         <SwiperSlide>
           <CardSlide
             title={t('titleTecnologyFrontend')}
-            description={t('descriptionTecnologyFrontend')}
+            technologies={frontendTechnologies}
             icon={frontend}
           />
         </SwiperSlide>
@@ -31,7 +34,7 @@ const Slider: React.FC = () => {
         <SwiperSlide>
           <CardSlide
             title={t('titleTecnologyBackend')}
-            description={t('descriptionTecnologyBackend')}
+            technologies={backendTechnologies}
             icon={backend}
           />
         </SwiperSlide>
@@ -39,7 +42,7 @@ const Slider: React.FC = () => {
         <SwiperSlide>
           <CardSlide
             title={t('titleTecnologyDesigner')}
-            description={t('descriptionTecnologyDesigner')}
+            technologies={designTechnologies}
             icon={designer}
           />
         </SwiperSlide>

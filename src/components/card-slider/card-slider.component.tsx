@@ -3,12 +3,12 @@ import React from 'react';
 import { Container } from './card-slider.style';
 
 export interface CardSliderProps {
-  description: string;
   title: string;
   icon: string;
+  technologies: string;
 }
 
-const CardSlide: React.FC<CardSliderProps> = ({ description, icon, title }) => {
+const CardSlide: React.FC<CardSliderProps> = ({ technologies, icon, title }) => {
   return (
     <Container>
       <div>
@@ -16,7 +16,7 @@ const CardSlide: React.FC<CardSliderProps> = ({ description, icon, title }) => {
           <img src={icon} alt="" />
           <h1>{title}</h1>
         </div>
-        <p>{description}</p>
+        <img src={technologies} alt="" />
       </div>
     </Container>
   );

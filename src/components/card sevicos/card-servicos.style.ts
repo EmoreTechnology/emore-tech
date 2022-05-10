@@ -62,14 +62,14 @@ export const Container = styled.div`
     > p {
       font-family: 'Poppins';
       font-style: 400;
-      font-weight: 600;
-      font-size: 12px;
+      font-weight: 500;
+      font-size: 16px;
       line-height: 16px;
       text-align: center;
       color: #ffffff;
       margin: 15px 0 0 0;
 
-      @media (min-width) {
+      @media (min-width: 768px) {
         font-size: 16px;
       }
     }
