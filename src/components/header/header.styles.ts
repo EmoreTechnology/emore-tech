@@ -71,8 +71,8 @@ export const Container = styled.div`
 
       > .flag {
         display: flex;
-        width: 14px;
-        height: 14px;
+        width: 16px;
+        height: 16px;
       }
       > img + img {
         margin-left: 10px;
