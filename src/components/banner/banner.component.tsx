@@ -8,7 +8,7 @@ const Banner: React.FC = () => {
 
   return (
     <Container>
-      <h1 className="name">Emore Tecnology</h1>
+      <h1 className="name">Emore Technology</h1>
 
       <div className="span">
         <span className="bloco-one" />
