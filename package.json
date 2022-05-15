@@ -18,8 +18,10 @@
         "i18next-browser-languagedetector": "^6.1.4",
         "i18next-http-backend": "^1.4.0",
         "react": "^18.1.0",
+        "react-content-loader": "^6.2.0",
         "react-dom": "^18.1.0",
         "react-i18next": "^11.16.9",
+        "react-loading-skeleton": "^3.1.0",
         "react-scripts": "5.0.1",
         "react-tsparticles": "^2.0.6",
         "styled-components": "^5.3.5",
@@ -58,6 +60,7 @@
     "devDependencies": {
         "@commitlint/cli": "^16.2.4",
         "@commitlint/config-conventional": "^16.2.4",
+        "@types/react-content-loader": "^4.0.0",
         "@types/styled-components": "^5.1.24",
         "commitizen": "^4.2.4",
         "cz-conventional-changelog": "3.3.0",
