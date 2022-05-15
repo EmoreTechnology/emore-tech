@@ -53,9 +53,10 @@ export const Container = styled.div`
 
   .ant-anchor {
     display: flex;
+    align-items: center;
+    height: 70px;
     background: #000;
     border-radius: 0 0 10px 10px;
-    height: 40px;
 
     @media (min-width: 768px) {
       width: 100%;
