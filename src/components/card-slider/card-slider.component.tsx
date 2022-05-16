@@ -13,10 +13,10 @@ const CardSlide: React.FC<CardSliderProps> = ({ technologies, icon, title }) => 
     <Container>
       <div>
         <div className="section">
-          <img src={icon} alt="" />
+          <img src={icon} alt="Frontend, backend e design" />
           <h1>{title}</h1>
         </div>
-        <img src={technologies} alt="" />
+        <img src={technologies} alt="Linguagens de programação" />
       </div>
     </Container>
   );

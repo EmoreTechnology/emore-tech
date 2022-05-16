@@ -46,10 +46,6 @@ export const Container = styled.div`
     padding-top: 50px;
   }
 
-  > .services {
-    padding-bottom: 50px;
-  }
-
   > .servicos {
     padding-top: 50px;
 

@@ -12,7 +12,7 @@ const Servicos: React.FC<CardServicesProps> = ({ description, icon, title }) => 
     <Container>
       <div>
         <div className="content">
-          <img src={icon} alt="" />
+          <img src={icon} alt="Serviços de tecnologia" />
 
           <h1>{title}</h1>
         </div>

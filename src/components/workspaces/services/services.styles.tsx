@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background: rgba(44, 69, 141, 0.3);
-  height: 800px;
+  height: 400px;
   width: 100%;
 
   > .tooltip {
@@ -14,29 +14,33 @@ export const Container = styled.div`
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     max-width: 850px;
     margin-top: 28px;
 
     > a {
       text-decoration: none;
+      height: 122px;
+
+      @media (min-width: 768px) {
+        height: 100%;
+      }
     }
 
     > a + a {
-      margin-top: 14px;
-
       @media (min-width: 768px) {
         margin: 0;
       }
     }
 
-    > :last-child {
+    /* > :last-child {
       margin-top: 14px;
 
       @media (min-width: 750px) {
         margin: 0;
       }
-    }
+    } */
   }
 
   > .contact {

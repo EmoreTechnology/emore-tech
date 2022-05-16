@@ -6,7 +6,7 @@ import email from '../../../assets/email-icon.png';
 import linkedin from '../../../assets/linkedin.png';
 import wpp from '../../../assets/wpp-icon.png';
 // Components
-import ContactForm from '../../form-contact/form-contact.component';
+// import ContactForm from '../../form-contact/form-contact.component';
 import Tooltip from '../../tooltip/tooltip.component';
 // Styles
 import { Container } from './services.styles';
@@ -17,7 +17,7 @@ const Services: React.FC = () => {
   return (
     <Container>
       <div className="tooltip">
-        <a href="https://www.linkedin.com/in/estefani-mor%C3%A9-12892b16a/" target="_blank">
+        <a href="https://www.linkedin.com/in/emore-technology-7ba53323a/" target="_blank">
           <Tooltip icon={linkedin} description={t('descriptionContactLinkedin')} />
         </a>
 
@@ -41,9 +41,9 @@ const Services: React.FC = () => {
         </a>
       </div>
 
-      <div className="contact">
+      {/* <div className="contact">
         <ContactForm />
-      </div>
+      </div> */}
     </Container>
   );
 };
